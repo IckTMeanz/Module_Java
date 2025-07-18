@@ -10,24 +10,16 @@ public class Test {
 		
 //		nghia n =()->System.out.print("hello lambda");
 //		n.run();
-		String a=new String("a");
-		String b="a";
-		System.out.println(a==b);
+		
+		nghia n =()->System.out.print("hello lambda");
+		n.run();
+		
+		List<Dog> dogs = new ArrayList<>();
+        LowerBoundExample.addDogs(dogs);	//chỉ ghi
+        UpperBoundExample.makeAllSpeak(dogs); // chỉ đọc
 		
 	}
 	
-//	public double callTestThrows(int a, int b) {
-//		return testThrows(a, b);
-//	}
+
 	
-	public double testThrows(int a, int b) throws Exception{
-		return a/b;
-	}
-	
-	public double testThrow(int a, int b) {
-		if(b==0) throw new ArithmeticException();
-		return a/b;
-		
-	
-	}
 }
